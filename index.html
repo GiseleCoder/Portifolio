@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Portifolio</title>
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <div class="flex justify-space-between align-center">
+                    <div>
+                        <a href="#" class="text-bold text-uppercase black--text text-decoration">Gisele Gomes</a>
+                    </div>
+                    <div class="none block-md">
+                        <a href="#competencias" class="text-bold text-uppercase black--text text-decoration">Competências</a>
+                        <a href="#about" class="text-bold text-uppercase black--text text-decoration">Sobre</a>
+                    </div>
+                    <div class="d-flex block none-md">
+                        <i class="menu-btn mdi mdi-menu" onclick="handleMenu()"></i>
+                    </div>
+                </div>
+                <div id="header-menu" class="header-mobile-menu none none-md flex align-center">
+                    <a href="competencias" class="text-title text-bold text-uppercase black--text text-decoration">Compentências</a>
+                    <a href="#about" class="text-title text-bold text-uppercase black--text text-decoration">Sobre</a>
+                </div>
+            </div>
+        </header>
+        <section id="presentation">
+            <img src="https://source.unsplash.com/BfrQnKBulYQ/1900x1080" alt="Imagem de apresentação" loading="lazy"/>
+            <div class="presentation-content flex align-center justify-center">
+                <div class="text-center">
+                    <h1 class="text-heading white--text">Gisele Gomes</h1>
+                    <h2 class="text-heading white--text">Web Full Stack</h2>
+                </div>
+            </div>
+        </section>
+        <section id="competencias" class="competencias-padding">
+            <h2 class="text-center text-title">Competências</h2>
+            <div class="flex gap-default flex-wrap">
+                <div class="card text-center">
+                    <img src="https://source.unsplash.com/O2MdroNurVw/300x200" alt="Imagem Competência 1" loading="lazy" class="rounded-sm shadow-sm"/>
+                    <h3 class="text-subtitle">Java</h3>
+                    <p class="text-base">Classes, métodos, objetos, encapsulamento, herança, polimorfismo e interfaces.</p>
+                </div>
+                <div class="card text-center">
+                    <img src="https://source.unsplash.com/FXFz-sW0uwo/300x200" alt="Imagem Competência 2" loading="lazy" class="rounded-sm shadow-sm"/>
+                    <h3 class="text-subtitle">C# .Net</h3>
+                    <p class="text-base">Back-end com c#, versionamento de código com Git e GitHub, UML. </p>
+                </div>
+                <div class="card text-center">
+                    <img src="https://source.unsplash.com/gnyA8vd3Otc/300x200" alt="Imagem Competência 3" loading="lazy" class="rounded-sm shadow-sm"/>
+                    <h3 class="text-subtitle">Angular</h3>
+                    <p class="text-base">Front-end com HTML, CSS, JavaScript e Angular.</p>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="grey sobre-padding">
+            <h2 class="text-center text-title">Sobre Gisele Gomes</h2>
+            <div class="flex gap-default justify-space-around flex-wrap flex-column flex-row-md">
+                <div class="card text-center">
+                    <h3 class="text-subtitle">Formação.</h3>
+                    <img src="https://source.unsplash.com/RfUy0XMCkhQ/300x200" alt="Imagem formação" loading="lazy" class="rounded-sm shadow-sm"/>
+                    <p class="text-base">Aluna do curso preparatório full stack na Let's Code.</p>
+                    <p class="text-base">Aluna do terceiro semestre de ADS na Fatec São Paulo.</p>
+                    <p class="text-base">Formada em tecnologia para bancos de dados pela IBTA.</p>    
+                </div>
+                <div class="card text-center">
+                    <h3 class="text-subtitle">Hobbies.</h3>
+                    <img src="https://source.unsplash.com/Dn9mnzfqkf4/300x200" alt="Imagem hobbies" loading="lazy" class="rounded-sm shadow-sm"/>
+                    <p class="text-base">Corrida e caminhada ao ar livre.</p>
+                    <p class="text-base">NetFlix e pipoca no final de semana.</p>
+                    <p class="text-base">Estudo matemática e sempre aprendo coisas diferentes.</p>
+                </div>
+            </div>
+        </section>
+        <footer class="text-center">
+            <a href="mailto:gisele.gomes.santos@outlook.com" class="text-base">gisele.gomes.santos@outlook.com</a>
+            <div class="footer-socias">
+                <a href="https://github.com/GiseleCoder" target="_blank" class="black--text"><i class="mdi mdi-github"></i></a>
+                <a href="https://www.linkedin.com/in/gisele-gomes-56a09773/" target="_blank" class="black--text"><i class="mdi mdi-linkedin"></i></a>
+            </div>
+        </footer>
+    </body>
+    <script>
+        let isMenuOpen = false
+        function handleMenu (){
+            const menu = document.getElementById('header-menu')
+            if(isMenuOpen) {
+                menu.classList.add('none')
+                menu.classList.remove('flex')
+            } else {
+                menu.classList.remove('none') 
+                menu.classList.add('flex')
+            }
+            isMenuOpen = !isMenuOpen
+        }
+    </script>
+</html>

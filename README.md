@@ -6,4 +6,5 @@
  * CSS
  * Flexbox
  * Media Queries
+ * JavaScript
 

@@ -1,9 +1,9 @@
 # Portifolio
 
- ## Tecnicas Utilizadas:
+ ### Tecnicas Utilizadas:
 
- *HTML
- *CSS
- *Flexbox
- *Media Queries
+ * HTML
+ * CSS
+ * Flexbox
+ * Media Queries
 
